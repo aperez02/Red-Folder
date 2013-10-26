@@ -25,7 +25,7 @@
         <div id="afui">
             <!-- Beginning header -->
             <div id="header">
-				<h2> Red Folder </h2>
+				<h2>{{% if page.title %}} {{ page.title }} {{% endif %}}</h2>
             </div>
             <!--ending header-->
             
@@ -49,9 +49,7 @@
                 
                 <!-- Beginning contact page-->
                 <div id="contactpage" class="panel">
-                	<h2>Contact us</h2>
-<p>Main office: (909)123-4567</p>
-
+                	{{ content }}
                 </div>
                 <!-- End of contact page-->
                 
